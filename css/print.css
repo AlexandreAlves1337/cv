@@ -1,0 +1,38 @@
+@media print {
+    header, .buttoncv { 
+        display: none;
+    }
+
+    main {
+        color:rgb(10, 10, 10);
+    }
+
+    .ccexperiences {
+        display: block;
+    }
+
+    .ccexperiences div {
+        background-image: none; 
+        box-shadow: none;
+        border: 1px solid #C0428A; 
+        border-radius: 6px; 
+        padding:2px;
+        margin-bottom: 6px;
+    }
+    
+    .ccexperiences div h2 {
+        font-size: 1em; 
+        margin-right: 4px;
+    }
+    
+    .ccexperiences div p {
+        font-size:0.80em;
+        border-image: linear-gradient(to right, transparent, transparent, #C0428A) 1;
+        margin-right: 4px;
+    }
+    
+    .ccexperiences div ul li{
+        padding: 0px;
+        font-size:0.90em;
+    }
+}

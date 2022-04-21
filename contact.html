@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre Alves - Bienvenue sur mon CV</title>
+    <meta name="Description" content="Description et présentation de mon parcours professionnel" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" media="screen" href="/css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png" title="favicon">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo">
+        <nav>
+            <div class="conteneur-nav">
+            <label for="mobile">☰</label>
+            <input type="checkbox" id="mobile">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <div class="cfor">
+            <h1>Me contacter</h1>
+            <p>N'hésitez à me contacter via le formulaire ci-dessous ou via mes réseaux sociaux.</p>
+            <div class="cform">
+                <form method="get">
+                    <fieldset>
+                        <legend><h3>Formulaire de contact :</h3></legend>
+                        <input class="host" id="host" name="host" type="text" value=""/>
+                            <ul>
+                                <li><label for="nom">Nom</label><input type="text" placeholder="entrez votre nom ici" id="nom" name="nom" required/></li>
+                                <li><label for="prenom">Prénom</label><input type="text" placeholder="entrez votre prénom ici" id="prenom" name="prenom" required/></li>
+                                <li><label for="tel">Téléphone</label><input type="tel" placeholder="entrez votre numéro de téléphone ici" id="tel" name="tel" required/></li>
+                                <li><label for="email">Mail</label><input type="email" placeholder="entrez votre email ici" id="email" name="email" required/></li>
+                                 <li><label for="demande">Message</label><textarea placeholder="tapez ici votre message" id="demande" name="demande" required></textarea></li>
+                            </ul>
+                        <input type="submit" name="submit" value="Envoyer" />
+                    </fieldset>
+                </form>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/alexandre-alves-7b2bba102/"><i class="fab fa-linkedin fa-3x" title="Linkedin"></i></a></li>
+                    <li><a href="https://github.com/AlexandreAlves1337"><i class="fab fa-github fa-3x" title="Github"></i></a></li>
+                </ul>
+            </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*Reset CSS*/
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/*HEADER*/
+
+header {
+    width:100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 75%;
+    padding:10px;
+    background-image: linear-gradient(to left, #3b3b3b, #2d2d2d, #202020, #141414, #000000);
+	background-image: -moz-linear-gradient(to left, #3b3b3b, #2d2d2d, #202020, #141414, #000000);
+    position:sticky;
+    top:0;
+    z-index:1;
+}
+
+header img {
+    width:75px;
+    margin:0 auto;
+	opacity: 1;
+	animation: shake 0.5s;
+	animation-delay: 1s;
+}
+
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*****MENU******/
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+.conteneur-nav{
+    position: absolute;
+    width: 100%;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav label{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+	color: #C0428A; 
+    background-image: linear-gradient(to left, #3b3b3b, #2d2d2d, #202020, #141414, #000000);
+	background-image: -moz-linear-gradient(to left, #3b3b3b, #2d2d2d, #202020, #141414, #000000);
+    font-size: 2rem;
+}
+nav ul{
+    display: none;
+    list-style-type: none;
+    background-image: linear-gradient(to left, #3b3b3b, #2d2d2d, #202020, #141414, #000000);
+	background-image: -moz-linear-gradient(to left, #3b3b3b, #2d2d2d, #202020, #141414, #000000);
+}
+nav input[type=checkbox]:checked + ul{
+    display: flex;
+    flex-flow : column wrap;
+}
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+	border-top: 1px solid;
+	border-image: linear-gradient(to right, transparent, #fff, transparent) 1;
+}
+nav > div > ul > li > a{
+	color: #C0428A; 
+    font-size: 2rem;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+	background-image: linear-gradient(to right, transparent, #fff, transparent);
+	color:#000;
+}
+
+/*MAIN*/
+
+main {
+    color:#fff;
+}
+
+section {
+	min-height: calc(100vh - 95px);
+	background-image: radial-gradient(circle, #3b3b3b, #2d2d2d, #202020, #141414, #000000);
+	background-image: -moz-radial-gradient(circle, #3b3b3b, #2d2d2d, #202020, #141414, #000000);
+	display:grid;
+	padding-top: 50px;
+}
+
+main a, main a:visited {
+	color: #C0428A; 
+	transition: 1s;
+}
+  
+main a:hover {
+	color: #FADCE6;
+}
+
+.csite > h1, .cexp > h1, .cfor > h1 {
+	text-align:center;
+}
+.csite > p, .cexp > p, .cfor > p {
+	text-align:center; 
+	padding:0 32px;
+}
+
+/************************************
+***************PRESENTATION**********
+************************************/
+#present {
+	padding:20px;
+}
+
+#present div {
+	margin-top: 32px;
+}
+
+.cni {
+	text-align: center;
+	line-height: 1.5;
+}
+
+.cni > div {
+	filter: drop-shadow(0px 0px 4px rgb(156, 150, 150));
+}
+
+.cni img {
+	clip-path:circle(50%);
+	width: 200px;
+}
+
+.description {
+	text-align: justify;
+	line-height: 1.5;
+}
+
+#present progress {
+	width: 100%;
+	display: block;
+	margin: 0px auto 20px auto;
+	border-radius: 25px;
+	max-width: 500px;
+	height: 20px;
+}
+
+#present label {
+	display: block;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#present progress::-webkit-progress-bar { background-color: #fff; border-radius: 25px;}
+#present progress::-webkit-progress-value {	background-color: #C0428A; border-radius: 25px;}
+#present progress::-moz-progress-bar {	background-color: #C0428A; border-radius: 25px;}
+
+.esp p {
+	text-decoration: underline;
+}
+
+.esp ul {
+	margin: 20px 0 0 20px;
+}
+
+.esp ul li {
+	padding-top:10px;
+}
+
+/************************************
+************EXPERIENCES**************
+************************************/
+
+.ccexperiences {
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: auto auto auto;
+	width:100%;
+	margin: auto;
+	padding:32px;
+}
+
+.ccexperiences div {
+	background-image: url("../img/bg.jpg"); 
+	background-size: cover; 
+	box-shadow: 5px 5px 15px 5px #000000;
+	border: 1px solid rgba(255, 255, 255, .8); 
+	border-radius: 10px; 
+	padding:5px;
+}
+
+.ccexperiences div h2 {
+	text-align: right; 
+	font-size: 1.17em; 
+	margin-right:8px;
+}
+
+.ccexperiences div p {
+	font-size:0.83em;
+	padding-right: 8px;
+	text-align: right;
+	padding-bottom:1%;
+	border-bottom: 1px solid;
+	border-image: linear-gradient(to right, transparent, transparent, #fff) 1;
+}
+
+.ccexperiences div ul{
+	margin: 0 32px; padding: 8px;
+}
+
+.ccexperiences div ul li{
+	padding: 4px;
+}
+
+.buttoncv {
+    padding:8px;
+	color:#000;
+	background-color: #C0428A;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	height: 50px;
+	text-align: center;
+	border-radius: 12px;
+	margin:0 auto 32px;
+}
+
+#experiences a:last-child {
+	text-decoration: none;
+}
+
+#experiences a:last-child:visited {
+	color:#000;
+}
+  
+.buttoncv:hover {
+	opacity: .3;
+}
+
+/************************************
+***************CONTACT***************
+************************************/
+
+.cform {
+	margin: auto; 
+	margin-top:75px;
+	background-image: url("../img/bg.jpg"); 
+	background-size: cover; 
+	box-shadow: 5px 5px 15px 5px #000000;
+	padding:10px;
+	border-radius:3px;
+	width:75vw;
+	border: 1px solid rgba(255, 255, 255, .8); 
+	border-radius: 10px; 
+}
+	
+.cform form fieldset {
+	border:none; 
+	margin:0; 
+	padding:0;
+}
+
+.cform form h3 {
+	padding:0 0 16px 16px;
+}
+	
+.cform form ul {
+	margin:0 auto; 
+	padding:0;
+	display:grid;
+	grid-gap:1%;
+	grid-template-columns: auto auto;
+}
+
+.cform form ul li {
+	background:rgba(110, 110, 110, 0.3); 
+	border:solid 2px rgba(110, 110, 110,.6); 
+	border-radius:4px; 
+	line-height:26px;
+	overflow: hidden;
+	padding:10px; 
+	margin-bottom:1%; 
+	list-style:none; 
+}
+
+.cform form ul li:last-child {
+	grid-column: 1 / span 2;
+  	grid-row: 3;
+}
+
+.cform form ul li label {
+	border:none;
+	border-radius:3px; 
+	outline:none; 
+	padding:5px; 
+	width:25%;
+}
+
+.cform form ul li input:not([type=radio]), .cform form textarea {
+	border:none;
+	border-radius:3px; 
+	outline:none; 
+	padding:5px; 
+	width:75%;
+	float:right;
+}
+
+.cform form textarea {
+	width:88%; 
+	height:20vh;
+	resize : none;
+}
+
+.cform form input:hover, .cform form select:hover, .cform form input:focus, .cform form select:focus, .cform form textarea:hover, .cform form textarea:focus {
+	background-color:#eaebf5;
+}
+
+.cform form input[type="submit"] {
+	background:rgba(110, 110, 110, 0.3); 
+	border:solid 2px rgba(110, 110, 110,.6); 
+	border-radius:4px; 
+	line-height:20px; 
+	font-size:18px; 
+	width:200px; 
+	margin:0 auto; 
+	margin-top:1%;
+	display:block;
+	color:#fff; 
+	float:none;
+}
+
+.cform form input[type="submit"]:hover {
+	background:rgba(0,0,0,.3); 
+	border:solid 2px rgba(0,0,0,.6); 
+	color:#fff; 
+	cursor:pointer;
+}
+
+.cform ul:last-child {
+	padding: 0;
+	margin-top:2%;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	border-top:1px solid;
+	border-image: linear-gradient(to right, transparent, #fff, transparent) 1;
+  }
+  
+.cform ul:last-child li {
+	display: inline; 
+	padding: 8px;
+  }
+
+.host {
+	display: none;
+}
