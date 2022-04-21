@@ -160,6 +160,10 @@ main a:hover {
 	line-height: 1.5;
 }
 
+.competences img {
+	width:100px;
+}
+
 #present progress {
 	width: 100%;
 	display: block;
