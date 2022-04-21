@@ -165,6 +165,11 @@ main a:hover {
 	margin: 10px;
 }
 
+.competences h2 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
 #present progress {
 	width: 100%;
 	display: block;
