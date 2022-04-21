@@ -161,7 +161,8 @@ main a:hover {
 }
 
 .competences img {
-	width:100px;
+	height:100px;
+	margin: 10px;
 }
 
 #present progress {
@@ -174,10 +175,7 @@ main a:hover {
 }
 
 #present label {
-	display: block;
-	margin-top: 20px;
-	padding-bottom: 10px;
-	text-align: center;
+	margin-bottom: 10px;
 }
 
 #present progress::-webkit-progress-bar { background-color: #fff; border-radius: 25px;}
@@ -197,7 +195,7 @@ main a:hover {
 }
 
 /************************************
-************EXPERIENCES**************
+**************EXPERIENCES************
 ************************************/
 
 .ccexperiences {
