@@ -8,6 +8,7 @@
     <meta name="Description" content="Description et présentation de mon parcours professionnel" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" media="screen" href="/css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png" title="favicon">
 </head>
 <body>
@@ -18,9 +19,9 @@
             <label for="mobile">☰</label>
             <input type="checkbox" id="mobile">
             <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#experiences">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             </div>
         </nav>
@@ -73,6 +74,91 @@
                     <li>Bienveillance</li>
                     <li>Esprit critique</li>
                 </ul>
+            </div>
+        </section>
+        <section id="experiences">
+            <div class="cexp">
+            <h1>Expériences professionnelles</h1>
+            <p>Avant de me lancer professionnellement dans le developpement web, j'ai eu plusieurs expériences dans différents domaines et différents secteurs.</p>
+            <div class="ccexperiences">
+                <div>
+                    <h2>Support client et Technicien SAV</h2><p>Naocom - Lunel (34) - 2017>2021</p>
+                    <ul>
+                        <li>Support technique par téléphone et par mail</li>
+                        <li>Gestion et traitements des retours SAV</li>
+                        <li>Planification des installations sur véhicule</li>
+                        <li>Formation logiciel à distance</li>
+                        <li>Production et expédition</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Chargé de clientèle SFR Pro mobile</h2><p>Aquitel - Chasseneuil du Poitou (86) - 2011>2014</p>
+                    <ul>
+                        <li>Support téléphonique entrant, administratif et technique de niveau 1</li>
+                        <li>Tâches administratives en « back-office » (Résiliation et changement de titulaire par exemple)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Assistant Informatique</h2><p>Autoentrepreneur - Châtellerault (86) - 2008>2011</p>
+                    <ul>
+                        <li>Création de site internet vitrine</li>
+                        <li>Conseils sur achat PC ou mobile, formation informatique de base, maintenance PC, installation et configuration nouveau matériel informatique</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Formation électromécanicien de maintenance industrielle</h2><p>Titre niveau 3 - AFPA de Châtellerault (86) - Obtention en 2009</p>
+                    <ul>
+                        <li>Base en electricité et mécanique industrielle, pneumatique et hydraulique</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Animateur scolaire orienté informatique</h2><p>Ecole Marcel Pagnol - Valergues (34) - 2005>2007</p>
+                    <ul>
+                        <li>Enseignement de l’informatique pour enfants du CP au CM2 en vue de l’obtention du B2I</li>
+                        <li>Optimisation du parc informatique de la médiathèque municipale et gestion du parc informatique de l’école</li>
+                        <li>Soutien scolaire en mathématiques et en français pour les élèves en difficultés du CP au CM2</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Animateur scolaire</h2><p>Ecole Mario Roustan - Lunel (34) - 2004>2005</p>
+                    <ul>
+                        <li>Mise en place et animation d’atelier ludique et pédagogique pour élève de CP en difficulté en lecture et en écriture</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>BEP Métiers de la comptabilité</h2><p>Lycée Louis Feuillade de Lunel (34) - Obtention en 2001</p>
+                    <ul>
+                        <li>Base en comptabilité et en secrétariat</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <a href="cv.pdf" class="buttoncv" download>Télecharger CV au format PDF</a>
+        </section>
+        <section id="contact">
+            <div class="cfor">
+            <h1>Me contacter</h1>
+            <p>N'hésitez à me contacter via le formulaire ci-dessous ou via mes réseaux sociaux.</p>
+            <div class="cform">
+                <form method="get">
+                    <fieldset>
+                        <legend><h3>Formulaire de contact :</h3></legend>
+                        <input class="host" id="host" name="host" type="text" value=""/>
+                            <ul>
+                                <li><label for="nom">Nom</label><input type="text" placeholder="entrez votre nom ici" id="nom" name="nom" required/></li>
+                                <li><label for="prenom">Prénom</label><input type="text" placeholder="entrez votre prénom ici" id="prenom" name="prenom" required/></li>
+                                <li><label for="tel">Téléphone</label><input type="tel" placeholder="entrez votre numéro de téléphone ici" id="tel" name="tel" required/></li>
+                                <li><label for="email">Mail</label><input type="email" placeholder="entrez votre email ici" id="email" name="email" required/></li>
+                                 <li><label for="demande">Message</label><textarea placeholder="tapez ici votre message" id="demande" name="demande" required></textarea></li>
+                            </ul>
+                        <input type="submit" name="submit" value="Envoyer" />
+                    </fieldset>
+                </form>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/alexandre-alves-7b2bba102/"><i class="fab fa-linkedin fa-3x" title="Linkedin"></i></a></li>
+                    <li><a href="https://github.com/AlexandreAlves1337"><i class="fab fa-github fa-3x" title="Github"></i></a></li>
+                </ul>
+            </div>
             </div>
         </section>
     </main>
